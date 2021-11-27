@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.company.com/companyNew.schema.json",
+  "type": "object",
+  "properties": {
+    "destination": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "partnername": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "allInclusive": {
+      "type": "boolean"
+    },
+
+    "pricePP": {
+      "type": "integer",
+      "minimum": 0
+    },
+
+    "imageUrl": {
+      "type": "string",
+      "minimum": 0
+    },
+
+    "check_in": {
+      "type": "string"
+    },
+
+    "check_out": {
+      "type": "string"
+    }
+
+
+
+    
+  },
+  "additionalProperties": false,
+  "required": [
+    "destination",
+    "partnername",
+    "allInclusive",
+    "pricePP",
+    "check_in",
+    "check_out"
+  ]
+}

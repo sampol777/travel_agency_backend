@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.company.com/tripUpdate.schema.json",
+  "type": "object",
+  "properties": {
+    "destination": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "partnername": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "numOfNights": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "allInclusive": {
+      "type": "boolean"
+      
+    },
+    "pricePP": {
+      "type": "integer",
+      "minimum": 0
+    }
+    
+  },
+  "additionalProperties": false,
+  "required": []
+}

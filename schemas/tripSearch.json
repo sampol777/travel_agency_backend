@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.company.com/tripSearch.schema.json",
+  "type": "object",
+  "properties": {
+    "numOfNights": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "minPrice": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "maxPrice": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "destination": {
+      "type": "string",
+      "minLength": 1
+    },
+    "partnername": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false,
+  "required": []
+}
