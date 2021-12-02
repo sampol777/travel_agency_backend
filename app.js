@@ -15,7 +15,7 @@ const braintreeRoutes = require("./routes/braintree")
 const ordersRoutes = require("./routes/orders");
 
 const morgan = require("morgan");
-
+const cors = require("cors")
 const app = express();
 
 app.use(cors());
