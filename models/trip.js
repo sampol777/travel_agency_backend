@@ -71,7 +71,7 @@ class Trip {
         let queryValues = [false];
         let whereExpressions = [`t_deleted=$${queryValues.length}`];
 
-        const {destination,partnername, numOfNights, allInclusive} = searchFilters;
+        const {destination,partnername, numOfNights, allInclusive, minPrice, maxPrice} = searchFilters;
 
         if (minPrice > maxPrice) {
             throw new BadRequestError("Min price cannot be greater than max")
