@@ -30,7 +30,7 @@ class Trip {
         console.log(destination, partnername, allInclusive, pricePP, imageUrl, check_in, check_out);
         const result = await db.query(
             `INSERT INTO trips
-            (destination, partnername, check_in, check_out, all_inclusive, price_per_person, image_url,deleted )
+            (destination, partnername, check_in, check_out, all_inclusive, price_per_person, image_url,t_deleted )
             VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
             RETURNING destination, partnername, all_inclusive AS "allInclusive", price_per_person AS "pricePP", check_in, check_out`,
             [
